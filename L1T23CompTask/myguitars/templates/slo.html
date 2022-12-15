@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Soldano SLO100</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index">Gear</a></li>
+        <li><a href="/polls/">Polls</a></li>
+        <li><a href="vids">Videos</a></li>
+        <li><a href="/personalbio/home" target="blank">Personal Bio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row">
+    <div class="col-sm-4 sidenav">
+      <a href="#" title="" class="">
+          <img src="https://i.imgur.com/Fc7JKNE.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <br>
+      </a>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Soldano SLO100</h1>
+      <p>The Soldano Super Lead Overdrive (S.L.O) 100 is another legendary piece of guitar gear. It's pronounced "Ess, Ell Oow" 
+         by the way, not "Slow". Mike Soldano designed this in the mid 1980s and by the late 80's there was a waiting list to own 
+         one. Interestingly any major guitarist that's ever owned one of these (most of them), waited in line and paid full price 
+         as Mike didn't do sponsorship deals. These amplifiers were handbuilt, and VERY expensive because of the quality and design
+         of components that went into them. From 1% tolerence resistors to custom designed and made transformers, it was an expensive 
+         amp to build. In the 25-30 years of production, there were probaly only 2500 of these made. Compare that to Mesa Boogie or
+         Marshall who probably couldn't even count the amount of a particular amp they make in year, never mind 25.</p>
+      <p>The main reason for it's popularity was it was one of the original high gain (distortion) amps, i.e. an amp that didn't require
+         any extra help from distortion or overdrive pedals. Add to that a pretty unique tonal character that is unusually articulate for 
+         so much gain, yet always stands out in the mix, and it became legendary and sought after very quickly.</p>      
+      <p>Mike sold the company a few years ago, and continues to do consultation and design work for the new owners. This particular SLO100
+         was built during Mike's ownership in 2008, so it's considered a "mark 1", touched by the hands of Mike himself... (guitar players 
+         can be suprisingly superstitious). The version produced by the current owners is Mike approved and contains many updates he himself
+         never had any time to make, because he spent so much time actually running the company.
+      </p>
+      <hr>
+      <h3>Polls</h3>
+      <p>Is this your favourite amplifier from my site? Go to the poll and give it a vote!</p>
+      <button type="submit" class="text-dark"><a href="/polls/">Go to polls</a></button>
+    </div>
+  </div>
+</div>
+<br>
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>

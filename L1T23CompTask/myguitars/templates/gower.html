@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gower Killer Kali</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index">Gear</a></li>
+        <li><a href="/polls/">Polls</a></li>
+        <li><a href="vids">Videos</a></li>
+        <li><a href="/personalbio/home" target="blank">Personal Bio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row">
+    <div class="col-sm-6 sidenav">
+      <a href="#" title="" class="">
+          <img src="https://i.imgur.com/ySyOuVr.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <br>
+      </a>
+    </div>
+    <div class="col-sm-6 text-left"> 
+      <h1>Dan Gower Killer Kali Modified Marshall</h1>
+      <p>That's a mouthful isn't it? So let me break this down.. This amplifier started life as an Marshall JCM800
+        (google, because that's an entire website in and of itself) built in the UK in 1981. Dan Gower, a lovely chap,
+        then modified the circuitry with his Killer Kali++ package of modifications which increase gain (distortion for metal)
+        , give the EQ controls more range, and other functionality changes. Killer Kali, because the idea of taking stock 
+        amplifiers and modifying them most popularly began in California in the late 70's. Dan is one of the more notable 
+        builders whose modification actually hold their value.</p>       
+      <p>This amp was a special project for me, and probably the bane of Dan's life for about 6 moths, although he was far too 
+         nice to complain. He, on top of the aforementioned package, added an FX loop, various extra tone controls, a clean channel, 
+         a footswitch control. It's what would be referred to as fully loaded. Plus we had a custom headshell (enclosure) with some
+         cool vinyl colours added.</p>
+      <hr>
+      <h3>Polls</h3>
+      <p>Is this your favourite amplifier from my site? Go to the poll and give it a vote!</p>
+      <button type="submit" class="text-dark"><a href="/polls/">Go to polls</a></button>
+    </div>
+  </div>
+</div>
+<br>
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.row.content {height: 1500px}
+    
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #65d0c0;
+  color: whitesmoke;
+  height: 100%;
+}
+
+body {
+  background-color:rgb(135, 203, 234);
+  color:black;
+  padding: 15px;
+}
+
+.list-group{
+  background-color:#5ab9ab;
+  padding: 15px;
+}
+
+.list-group-item{
+  background-color:rgba(205, 205, 205, 0.87);
+  color:black
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}

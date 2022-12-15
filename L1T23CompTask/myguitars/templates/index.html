@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Irish Guitar Enthusiast</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/polls/">Polls</a></li>
+        <li><a href="vids">Videos</a></li>
+        <li><a href="/personalbio/home" target="blank">Personal Bio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>An Irish Guitar Player in Scotland</h1>      
+    <p>A "Guitar Player" and not a "Guitarist"...?
+       Well... I think of guitarists as properly trained
+       or musically literate. The rest of us just like making
+       noise in a semi-tuneful fashion. This site is just to 
+       detail some of my guitars and amplifiers.
+    </p>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Guitars</h3>
+  <h5>Click on learn more for further info</h5><br>
+  <div class="row">
+    <!--defining columns used within the row, 4 elements per row plus call zoomin CSS file-->
+    <div class="col-sm-2 col-sm-offset-1 hover-zoomin">
+        <!--wrapper for zoom effect-->
+        <a href="#" title="" class="">
+        <!--defining source for img, img-responsive makes image resizable, style maintains aspect ratio
+        title makes a hover over comment appear-->
+          <img src="https://i.imgur.com/TnEygpd.jpg" class="img-responsive" style="width:100%" alt="Image" title ="No longer made :(">
+        </a>
+        <p>Bacchus Imperial Pro</p> 
+        <br>
+        <button type="submit" class="btn btn-secondary"><a href="bacchus">Learn more</a></button>
+        <br>
+    </div>
+    <div class="col-sm-2 hover-zoomin">
+        <a href="#" title="">
+          <img src="https://i.imgur.com/mhXw599.jpg" class="img-responsive" style="width:100%" alt="Image" title="The guitar formerly known as Eddie Van Halen's guitar">
+        </a>
+        <p>Ernie Ball Musicman Axis</p>
+        <br>
+        <button type="submit" class="btn btn-secondary"><a href="ebmm">Learn more</a></button>
+        <br>
+    </div>
+    <div class="col-sm-2 hover-zoomin">
+        <a href="#" title="">
+          <img src="https://i.imgur.com/UfwHAyd.jpg" class="img-responsive" style="width:100%" alt="Image" title="Teal Black is a rare colour">
+        </a>
+        <p>PRS McCarty Trem</p>
+        <br>
+        <button type="submit" class="btn btn-secondary"><a href="prs">Learn more</a></button>
+        <br>
+    </div>
+    <div class="col-sm-2 hover-zoomin">
+        <a href="#" title="">
+          <img src="https://i.imgur.com/uvcYh7t.jpg" class="img-responsive" style="width:100%" alt="Image" title="A Telecaster with gold hardware...">
+        </a>
+        <p>Fender Richie Kotzen Signature Telecaster</p>
+        <button type="submit" class="btn btn-secondary"><a href="rk">Learn more</a></button>
+        <br>
+    </div>
+    <div class="col-sm-2 hover-zoomin">
+      <a href="#" title="">
+        <img src="https://i.imgur.com/cIcRI0N.jpg" class="img-responsive" style="width:100%" alt="Image" title ="The original">
+      </a>
+      <p>Fender Japan 1962 Reissue Stratocaster</p>
+      <button type="submit" class="btn btn-secondary"><a href="strat">Learn more</a></button>
+      <br>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid bg-3 text-center">    
+  <h3>Amplifiers</h3><br>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-3 hover-zoomin">
+      <a href="#" title="">
+        <img src="https://i.imgur.com/H2eLuaF.jpg" class="img-responsive" style="width:100%" alt="Image" title ="Metal \m/">
+      </a>
+      <p>Dan Gower Killer Kali Modified Marshall</p>
+      <button type="submit" class="btn btn-secondary"><a href="gower">Learn more</a></button>
+      <br>
+    </div>
+    <div class="col-sm-3 hover-zoomin">
+      <a href="#" title="">
+        <img src="https://i.imgur.com/waaWU2t.jpg" class="img-responsive" style="width:100%" alt="Image" title ="Another original">
+      </a>
+      <p>Soldano SLO-100</p>
+      <button type="submit" class="btn btn-secondary"><a href="slo">Learn more</a></button>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>

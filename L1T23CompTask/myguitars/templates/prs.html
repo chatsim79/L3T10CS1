@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PRS McCarty Trem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index">Gear</a></li>
+        <li><a href="/polls/">Polls</a></li>
+        <li><a href="vids">Videos</a></li>
+        <li><a href="/personalbio/home" target="blank">Personal Bio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row">
+    <div class="col-sm-4 sidenav">
+      <a href="#" title="" class="">
+          <img src="https://i.imgur.com/Sq2mvQx.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <br>
+      </a>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Paul Reed Smith (PRS) McCarty Trem</h1>
+      <p>This guitar was developed with the assistance of Ted McCarty, the Vice President, then President of 
+         Gibson Guitars during it's "golden age" in the 50s and 60s, during which most of Gibson's most iconic guitars were produced. 
+         The PRS McCarty was an attempt to bring some qualities of the Gibson Les Paul model, to PRS. </p>
+      <p>This model was from what was called a "Dealer Special Run" where, with large orders, a dealer can specify certain details on 
+         the guitar. In this case the colour (Teal Black), the "top" (wood used for the front of the guitar) and the tremolo (or whammy/wang bar)
+          were all special options chosen by the dealer. The top in particular is another example of the disease mentioned on the 
+          Musicman Page, this time resulting in a striped rather than quilted pattern. It's also an example of what PRS call a "10 top", 
+          representing the best visual quality of figured wood they have in stock.</p>
+      <hr>
+      <h3>Polls</h3>
+      <p>Is this your favourite guitar from my site? Go to the poll and give it a vote!</p>
+      <button type="submit" class="text-dark"><a href="/polls/">Go to polls</a></button>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>

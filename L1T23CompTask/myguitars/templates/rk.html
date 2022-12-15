@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fender RK Sig Tele</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index">Gear</a></li>
+        <li><a href="/polls/">Polls</a></li>
+        <li><a href="vids">Videos</a></li>
+        <li><a href="/personalbio/home" target="blank">Personal Bio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row">
+    <div class="col-sm-4 sidenav">
+      <a href="#" title="" class="">
+          <img src="https://i.imgur.com/hlJqtc5.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <br>
+      </a>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Fender Richie Kotzen Signature Telecaster</h1>
+      <p>This is another Japanese guitar, a signature model for the guitarist Richie Kotzen who started on the
+         scene in the bad Poison, back in the 80s when guys playing guitar in Glam Metal bands looked like the 
+         Ladies from Baywatch, except the players had bigger hair. Totally cool with that BTW, but it was the
+         best way of providing a visual. Unusually for the tye of music he was playing, he was VERY fond of 
+         using 1) Telecasters with 2) massive necks. This guitar was unavailable outside of Japan except for 
+         grey importers until the early 2010's, which is how i got mine. Since this, it was released globally
+         and has proved to be a very popular model.</p>
+      <p>This is a Telecaster, with gold hardware, neither of which I'm typically fond of, but the first time 
+         I played this guitar in the store, i knew i had to have it. More modern, contemporary tones are provided
+         via the inclusion of a single coil sized humbucker at the bridge. The massive neck was a result of Richie
+         being a massive guy (6.5ft tall) with massive hands. He chose a large neck for this guitar purely for playing
+         ergonomics. Fortunately it works for guys like me with baby sized hands.
+      </p>
+      <hr>
+      <h3>Polls</h3>
+      <p>Is this your favourite guitar from my site? Go to the poll and give it a vote!</p>
+      <button type="submit" class="text-dark"><a href="/polls/">Go to polls</a></button>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>

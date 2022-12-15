@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bacchus Imperial Pro.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'common.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index">Gear</a></li>
+        <li><a href="/polls/">Polls</a></li>
+        <li><a href="vids">Videos</a></li>
+        <li><a href="/personalbio/home" target="blank">Personal Bio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row">
+    <div class="col-sm-4 sidenav">
+      <a href="#" title="" class="">
+          <img src="https://i.imgur.com/G4jfOPj.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <br>
+      </a>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Bacchus Imperial Pro</h1>
+      <p>Deviser, the parent company of Bacchus, are a reasonably small manufacturer that are well known in 
+        Japan. They established their name making clones of Fender Stratocasters and Gibson Les Pauls (for 
+        more on this see the Fender Stratocaster webpage). This one was a birthday present from my wife, and 
+        it's essentially my number one guitar, i.e. its the guitar I pick up 9 times out of 10.</p>
+      <p>Featuring a one-piece natural oil finished Acaccia body (I suspect it's Australian Blackwood), a 
+         maple/rosewood neck/fretboard and Gotoh Hardware throughout, including the Gotoh 1996T Tremolo unit 
+         (best on the market in my view) and a tapered bolt-on neck joint for good upper fret access, It's a solid, 
+         great sounding instrument which is really easy to pick up and get going with.  </p>
+      <hr>
+      <h3>Polls</h3>
+      <p>Is this your favourite guitar from my site? Go to the poll and give it a vote!</p>
+      <button type="submit" class="text-dark"><a href="/polls/">Go to polls</a></button>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Thanks for viewing!! </p>
+</footer>
+
+</body>
+</html>
