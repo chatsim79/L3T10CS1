@@ -1,6 +1,15 @@
 from django.db import models
 # Create your models here.
 class Question(models.Model):
+    """
+    Class model for poll questions 
+    stored in db.sqlite3 relational 
+    database.
+
+    :param model modules, Model class: param called by function
+
+    :rtype: string, poll question
+    """
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
