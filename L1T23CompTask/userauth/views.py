@@ -18,7 +18,7 @@ def authenticate_user(request):
     functionality to authenticate the user name and 
     and password from the database user object.
     If authentication fails, redirect back to login page.
-    If successful, redirect to home page. 
+    If successful, redirect to home page. q
 
     :param request: request username and password
 
