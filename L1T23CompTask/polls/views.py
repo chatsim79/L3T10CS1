@@ -24,6 +24,21 @@ class ResultsView(generic.DetailView):
     template_name = 'polls/results.html'
 
 def vote(request, question_id):
+    """ 
+    This function defines the exception process
+    for voting in a poll. The question model is called 
+    and rendered. If no question exists, a 404 is dispalyed
+    an exception is generated if no choice is selected
+    before using the vote button, whereby a messgae will be
+    displayed and the user will be allowed to select.
+    when a valid selection is made, 1 count is added to the vote 
+    tally and the user is redirected to the results page.
+
+    :param Question: Stored question in db
+    :param question id: id of Question
+
+    :rtype: results screen if vote success
+    """
     question = get_object_or_404(Question, pk=question_id)
     try:
         selected_choice = question.choice_set.get(

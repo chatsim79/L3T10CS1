@@ -5,9 +5,25 @@ from django.contrib.auth import authenticate, login
 from .forms import SignUpForm
 
 def user_login(request):
+    """
+    This function calls inbuilt render function
+    requests and renders the login html with the 
+    authentication folder.
+    """
     return render(request, 'authentication/login.html')
 
 def authenticate_user(request):
+    """
+    This function uses Django's built in authentication
+    functionality to authenticate the user name and 
+    and password from the database user object.
+    If authentication fails, redirect back to login page.
+    If successful, redirect to home page. q
+
+    :param request: request username and password
+
+    :rtype: re-request login info if none, else redirect to home page
+    """
     username = request.POST['username']
     password = request.POST['password']
     user = authenticate(username=username, password=password)

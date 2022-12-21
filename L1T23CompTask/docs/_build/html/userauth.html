@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>userauth package &mdash; L3T10 Capstone Project 00.00.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> L3T10 Capstone Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">userauth package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-userauth.admin">userauth.admin module</a></li>
+<li><a class="reference internal" href="#module-userauth.apps">userauth.apps module</a><ul>
+<li><a class="reference internal" href="#userauth.apps.UserauthConfig"><code class="docutils literal notranslate"><span class="pre">UserauthConfig</span></code></a><ul>
+<li><a class="reference internal" href="#userauth.apps.UserauthConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">UserauthConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#userauth.apps.UserauthConfig.name"><code class="docutils literal notranslate"><span class="pre">UserauthConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-userauth.forms">userauth.forms module</a><ul>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm"><code class="docutils literal notranslate"><span class="pre">SignUpForm</span></code></a><ul>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm.Meta"><code class="docutils literal notranslate"><span class="pre">SignUpForm.Meta</span></code></a><ul>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm.Meta.fields"><code class="docutils literal notranslate"><span class="pre">SignUpForm.Meta.fields</span></code></a></li>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm.Meta.model"><code class="docutils literal notranslate"><span class="pre">SignUpForm.Meta.model</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm.base_fields"><code class="docutils literal notranslate"><span class="pre">SignUpForm.base_fields</span></code></a></li>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm.declared_fields"><code class="docutils literal notranslate"><span class="pre">SignUpForm.declared_fields</span></code></a></li>
+<li><a class="reference internal" href="#userauth.forms.SignUpForm.media"><code class="docutils literal notranslate"><span class="pre">SignUpForm.media</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-userauth.models">userauth.models module</a></li>
+<li><a class="reference internal" href="#module-userauth.tests">userauth.tests module</a></li>
+<li><a class="reference internal" href="#module-userauth.urls">userauth.urls module</a><ul>
+<li><a class="reference internal" href="#userauth.urls.app_name"><code class="docutils literal notranslate"><span class="pre">app_name</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-userauth.views">userauth.views module</a><ul>
+<li><a class="reference internal" href="#userauth.views.authenticate_user"><code class="docutils literal notranslate"><span class="pre">authenticate_user()</span></code></a></li>
+<li><a class="reference internal" href="#userauth.views.signup"><code class="docutils literal notranslate"><span class="pre">signup()</span></code></a></li>
+<li><a class="reference internal" href="#userauth.views.user_login"><code class="docutils literal notranslate"><span class="pre">user_login()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-userauth">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">L3T10 Capstone Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">userauth package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/userauth.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="userauth-package">
+<h1>userauth package<a class="headerlink" href="#userauth-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="userauth.migrations.html">userauth.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userauth.migrations.html#module-userauth.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-userauth.admin">
+<span id="userauth-admin-module"></span><h2>userauth.admin module<a class="headerlink" href="#module-userauth.admin" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-userauth.apps">
+<span id="userauth-apps-module"></span><h2>userauth.apps module<a class="headerlink" href="#module-userauth.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="userauth.apps.UserauthConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">userauth.apps.</span></span><span class="sig-name descname"><span class="pre">UserauthConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/userauth/apps.html#UserauthConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userauth.apps.UserauthConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="userauth.apps.UserauthConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#userauth.apps.UserauthConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="userauth.apps.UserauthConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'userauth'</span></em><a class="headerlink" href="#userauth.apps.UserauthConfig.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-userauth.forms">
+<span id="userauth-forms-module"></span><h2>userauth.forms module<a class="headerlink" href="#module-userauth.forms" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">userauth.forms.</span></span><span class="sig-name descname"><span class="pre">SignUpForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/userauth/forms.html#SignUpForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userauth.forms.SignUpForm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserCreationForm</span></code></p>
+<p>Class for user object creation.
+Uses default django forms module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/userauth/forms.html#SignUpForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userauth.forms.SignUpForm.Meta" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing fields labels for form</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('first_name',</span> <span class="pre">'last_name',</span> <span class="pre">'username',</span> <span class="pre">'password1',</span> <span class="pre">'password2')</span></em><a class="headerlink" href="#userauth.forms.SignUpForm.Meta.fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#userauth.forms.SignUpForm.Meta.model" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'first_name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'last_name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#userauth.forms.SignUpForm.base_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'first_name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'last_name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#userauth.forms.SignUpForm.declared_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="userauth.forms.SignUpForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#userauth.forms.SignUpForm.media" title="Permalink to this definition"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-userauth.models">
+<span id="userauth-models-module"></span><h2>userauth.models module<a class="headerlink" href="#module-userauth.models" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-userauth.tests">
+<span id="userauth-tests-module"></span><h2>userauth.tests module<a class="headerlink" href="#module-userauth.tests" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-userauth.urls">
+<span id="userauth-urls-module"></span><h2>userauth.urls module<a class="headerlink" href="#module-userauth.urls" title="Permalink to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="userauth.urls.app_name">
+<span class="sig-prename descclassname"><span class="pre">userauth.urls.</span></span><span class="sig-name descname"><span class="pre">app_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'userauth'</span></em><a class="headerlink" href="#userauth.urls.app_name" title="Permalink to this definition"></a></dt>
+<dd><p>The following URL pattern calls the
+functions defined in views.py. in turn
+these” URL patterns are called by the
+project level URL file in the root
+directory</p>
+</dd></dl>
+
+</section>
+<section id="module-userauth.views">
+<span id="userauth-views-module"></span><h2>userauth.views module<a class="headerlink" href="#module-userauth.views" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="userauth.views.authenticate_user">
+<span class="sig-prename descclassname"><span class="pre">userauth.views.</span></span><span class="sig-name descname"><span class="pre">authenticate_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/userauth/views.html#authenticate_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userauth.views.authenticate_user" title="Permalink to this definition"></a></dt>
+<dd><p>This function uses Django’s built in authentication
+functionality to authenticate the user name and
+and password from the database user object.
+If authentication fails, redirect back to login page.
+If successful, redirect to home page. q</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>request</strong> – request username and password</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>re-request login info if none, else redirect to home page</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="userauth.views.signup">
+<span class="sig-prename descclassname"><span class="pre">userauth.views.</span></span><span class="sig-name descname"><span class="pre">signup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/userauth/views.html#signup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userauth.views.signup" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="userauth.views.user_login">
+<span class="sig-prename descclassname"><span class="pre">userauth.views.</span></span><span class="sig-name descname"><span class="pre">user_login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/userauth/views.html#user_login"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userauth.views.user_login" title="Permalink to this definition"></a></dt>
+<dd><p>This function calls inbuilt render function
+requests and renders the login html with the
+authentication folder.</p>
+</dd></dl>
+
+</section>
+<section id="module-userauth">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-userauth" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Simon Chatterley.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

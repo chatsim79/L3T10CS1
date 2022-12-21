@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+"""
+URL patterns are a list of groups of URLs 
+by app, and allow the render request functions
+in individual app views.py to be called
+"""
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("django.contrib.auth.urls")),

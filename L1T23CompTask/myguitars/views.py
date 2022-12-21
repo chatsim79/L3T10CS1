@@ -1,6 +1,19 @@
 from django.shortcuts import render
 
 def index(request):
+    """
+    This function, and all subsequent fn. in 
+    this file requests and renders the named 
+    html file.
+
+    :param request built in function: Request
+    :param html file, index.html: index.html page
+
+    :returns: The rendered HTML file
+    
+    :rtype: Webpage,
+
+    """
     return render(request, 'index.html')
 
 def bacchus(request):
