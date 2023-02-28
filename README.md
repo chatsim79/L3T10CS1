@@ -29,7 +29,7 @@ app running indepedent of VSC.
 
 once the repository is cloned, cd into the L1T23CompTask folder:
 
-"cd L3T10"
+"cd L3T10CS1"
 
 "cd L1T23CompTask"
 
